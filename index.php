@@ -74,23 +74,32 @@ function saudacao($nome) {
     return "Olá, ". $nome."! Bem-vindo(a) ao meu sistema."."<br><br>";
 }
 echo "<hr>";
+?>
 
-// 9.Formulário simples
-echo "9.Formulário simples"."<br><br>";
-function boas_vindas($nome) {
-    return "Bem-vindo(a), ". $nome. "!"."<br><br>";
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h3>9.Formulário simples</h3>
+<br><br>
 <form>
     <label for="nome"> Nome: </label>
-    <input type="text" id="nome" name="nome"><br><br>;
+    <input type="text" id="nome" name="nome">"<br><br>";
 </form>
 <button onclick="boas_vindas(document.getElementById('nome').value)">Enviar</button>
+</body>
+<?php
 echo "<hr>";
 
 // 10.Contagem com While
 echo "10.Contagem com While"."<br><br>";
-while ($k=1; $k <= 10; $k++) {
+$k=1;
+while ($k <= 10) {
     echo "Número: ".$k."<br>";
+    $k++;
 }
 echo "<hr>";
 ?>
