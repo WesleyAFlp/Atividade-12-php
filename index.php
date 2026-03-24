@@ -73,6 +73,7 @@ echo "8.Função de saudação"."<br><br>";
 function saudacao($nome) {
     return "Olá, ". $nome."! Bem-vindo(a) ao meu sistema."."<br><br>";
 }
+echo saudacao('Wesley');
 echo "<hr>";
 ?>
 
@@ -83,14 +84,14 @@ echo "<hr>";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h3>9.Formulário simples</h3>
-<br><br>
-<form>
+<h3>9.Formulário de Saudação</h3>
+<form action="atividade9.php" method="post">
     <label for="nome"> Nome: </label>
-    <input type="text" id="nome" name="nome">"<br><br>";
+    <input type="text" id="nome" name="nome"><br><br>
+    <button type="submit">Enviar</button>
 </form>
-<button onclick="boas_vindas(document.getElementById('nome').value)">Enviar</button>
 </body>
+
 <?php
 echo "<hr>";
 
