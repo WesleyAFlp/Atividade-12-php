@@ -68,6 +68,29 @@ for ($j = 0; $j < 3; $j++) {
 }
 echo "<hr>";
 
+// 8.Função de saudação
+echo "8.Função de saudação"."<br><br>";
+function saudacao($nome) {
+    return "Olá, ". $nome."! Bem-vindo(a) ao meu sistema."."<br><br>";
+}
+echo "<hr>";
 
+// 9.Formulário simples
+echo "9.Formulário simples"."<br><br>";
+function boas_vindas($nome) {
+    return "Bem-vindo(a), ". $nome. "!"."<br><br>";
+}
+<form>
+    <label for="nome"> Nome: </label>
+    <input type="text" id="nome" name="nome"><br><br>;
+</form>
+<button onclick="boas_vindas(document.getElementById('nome').value)">Enviar</button>
+echo "<hr>";
 
+// 10.Contagem com While
+echo "10.Contagem com While"."<br><br>";
+while ($k=1; $k <= 10; $k++) {
+    echo "Número: ".$k."<br>";
+}
+echo "<hr>";
 ?>
